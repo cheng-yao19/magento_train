@@ -18,6 +18,13 @@ class Index extends Template
     protected $userResource;
 
 
+    /**
+     * Index constructor.
+     * @param Template\Context $context
+     * @param UserFactory $userFactory
+     * @param User $userResource
+     * @param array $data
+     */
     public function __construct(
         Template\Context $context,
         UserFactory $userFactory,
