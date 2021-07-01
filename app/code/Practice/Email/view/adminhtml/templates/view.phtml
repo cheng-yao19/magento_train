@@ -1,0 +1,7 @@
+<div class="user-info">
+    <?php $user = $this->getUserByEmail() ?>
+    <?php if(!empty($user)) : ?>
+    <div class="name-info">First Name:<?php echo $user->getFirstName() ?></div>
+    <div class="name-info">Last Name:<?php echo $user->getLastName() ?></div>
+    <?php endif;?>
+</div>
